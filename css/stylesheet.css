@@ -1,0 +1,8 @@
+:root {
+  --main-txt-color: #444;
+}
+
+html {
+  line-height: 1.6;
+  font-family: sans-serif;
+}
