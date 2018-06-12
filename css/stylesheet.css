@@ -9,7 +9,6 @@ html,
 body {
   background-image: url(https://i.imgur.com/1TTfFzi.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
@@ -32,7 +31,7 @@ h1 {
   background-color: var(--alt-txt-color);
   margin: 0 auto;
   border-radius: 6px;
-  width: 50%;
+  width: 75%;
   max-width: 600px;
   padding: 20px;
   text-align: left;
@@ -69,7 +68,6 @@ input[type="email"],
 input[type="number"],
 textarea {
   height: 18px;
-  width: 280px;
   padding: 5px;
   margin: 10px;
   border: 1px solid #c0c0c0;
@@ -126,37 +124,28 @@ footer {
   padding: 20px;
 }
 
-/* For debugging only: */
-
-/*
-* {
-  outline: 2px dotted red;
+@media screen and (max-width: 650px) {
+  .label-text {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  fieldset {
+    width: 97%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+  input[type="number"],
+  select {
+    margin-left: 0;
+  }
 }
-
-* * {
-  outline: 2px dotted green;
-}
-
-* * * {
-  outline: 2px dotted orange;
-}
-
-* * * * {
-  outline: 2px dotted blue;
-}
-
-* * * * * {
-  outline: 1px solid red;
-}
-
-* * * * * * {
-  outline: 1px solid green;
-}
-
-* * * * * * * {
-  outline: 1px solid orange;
-}
-
-* * * * * * * * {
-  outline: 1px solid blue;
-}*/
