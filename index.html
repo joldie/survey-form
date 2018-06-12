@@ -17,24 +17,94 @@
 
 <body>
 
-  <header>
-    <h1 id="title">Survey Form</h1>
-    <div id="description">Short description about Survey Form...</div>
-  </header>
-
   <main>
 
-    <form id="survey-form">
+    <h1 id="title">Win a trip to Norway!</h1>
 
+    <div id="form-container">
+      <p id="description">Fill in your details and answer some easy questions to be in to win an all-expenses-paid cruise through the beautiful
+        fjords of Norway!</p>
 
-    </form>
+      <form id="survey-form">
+
+        <label for="name" id="name-label" class="label-text">* Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" autofocus required>
+
+        <label for="email" id="email-label" class="label-text">* Email:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="gender" class="label-text">Gender:</label>
+        <fieldset id="gender">
+          <input type="radio" id="radio1" name="gender" value="male">
+          <label for="radio1">Male</label>
+          <br>
+          <input type="radio" id="radio2" name="gender" value="female">
+          <label for="radio2">Female</label>
+          <br>
+          <input type="radio" id="radio3" name="gender" value="other">
+          <label for="radio3">Other</label>
+        </fieldset>
+
+        <label for="number" id="number-label" class="label-text">On a scale of 1 to 10, how much would you like to win this trip?
+          <br>
+          <em>(Tip: All entries with values less than 10 will be discarded)</em>
+        </label>
+        <input type="number" min="0" max="10" placeholder="Pick a number">
+
+        <label for="dropdown" class="label-text">Are you really sure you want to visit Norway?</label>
+        <select id="dropdown">
+          <option disabled value selected>Select an option</option>
+          <option value="yes">Yes, of course!</option>
+          <option value="no">Actually, no. I'm scared.</option>
+        </select>
+
+        <label for="interests" class="label-text">Select your interests:
+          <br>
+          <em>(you may select more than one)</em>
+        </label>
+        <fieldset id="interests">
+          <div>
+            <input type="checkbox" id="hiking" name="interest" value="hiking">
+            <label for="hiking">Hiking</label>
+          </div>
+          <div>
+            <input type="checkbox" id="skiing" name="interest" value="skiing">
+            <label for="skiing">Skiing</label>
+          </div>
+          <div>
+            <input type="checkbox" id="eating" name="interest" value="eating">
+            <label for="eating">Eating fermented trout</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sauna" name="interest" value="sauna">
+            <label for="sauna">Taking saunas</label>
+          </div>
+          <div>
+            <input type="checkbox" id="reindeer" name="interest" value="reindeer">
+            <label for="reindeer">Riding reindeer</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cruise" name="interest" value="cruise">
+            <label for="cruise">Cruise shipping</label>
+          </div>
+        </fieldset>
+
+        <label for="comment" class="label-text">In 100 words or less, explain why you deserve this trip more than all of the other contestants</label>
+        <textarea id="comment" rows="4" cols="50" placeholder="Be honest now..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+      </form>
+    </div>
 
   </main>
 
   <footer class="small-font">
     Made by
     <a href=" https://github.com/joldie/ " target="_blank ">joldie</a> as a project for the
-    <a href="https://learn.freecodecamp.org/ " target="_blank ">freeCodeCamp</a> Responsive Web Design course.
+    <a href="https://learn.freecodecamp.org/ " target="_blank ">freeCodeCamp</a> Responsive Web Design course
+    <br>Photo source:
+    <a href="https://imgur.com/gallery/1TTfFzi" target="_blank ">imgur</a>
   </footer>
 
 </body>

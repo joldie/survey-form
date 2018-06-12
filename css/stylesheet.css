@@ -1,8 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans');
 :root {
-  --main-txt-color: #444;
+  --main-txt-color: #333;
+  --alt-txt-color: rgb(252, 252, 252);
+  --button-color: #59ace0;
 }
 
-html {
+html,
+body {
+  background-image: url(https://i.imgur.com/1TTfFzi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--main-txt-color);
+  text-align: center;
+  min-width: 320px;
 }
+
+a {
+  color: inherit;
+}
+
+h1 {
+  color: var(--alt-txt-color);
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#form-container {
+  background-color: var(--alt-txt-color);
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 50%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+}
+
+#description {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.label-text {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 0 5px 5px 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+input,
+fieldset,
+select,
+textarea {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  height: 18px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+select {
+  height: 32px;
+  width: 200px;
+  margin: 10px;
+}
+
+input[type="number"] {
+  width: 190px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 35px;
+}
+
+textarea {
+  height: 150px;
+  font-size: 1.1em;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+  border: 0px solid;
+  color: var(--alt-txt-color);
+  font-weight: bold;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+}
+
+footer {
+  color: var(--alt-txt-color);
+  padding: 20px;
+}
+
+/* For debugging only: */
+
+/*
+* {
+  outline: 2px dotted red;
+}
+
+* * {
+  outline: 2px dotted green;
+}
+
+* * * {
+  outline: 2px dotted orange;
+}
+
+* * * * {
+  outline: 2px dotted blue;
+}
+
+* * * * * {
+  outline: 1px solid red;
+}
+
+* * * * * * {
+  outline: 1px solid green;
+}
+
+* * * * * * * {
+  outline: 1px solid orange;
+}
+
+* * * * * * * * {
+  outline: 1px solid blue;
+}*/
